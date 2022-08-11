@@ -5,10 +5,6 @@ import numpy as np
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_flask():
-    return 'Hello Flask'
-
 @app.route('/inicio')
 def show_home():
     return render_template('index.html')
