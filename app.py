@@ -5,9 +5,9 @@ import numpy as np
 
 app = Flask(__name__)
 
-@app.route('/')
+""" @app.route('/')
 def show_home():
-    return render_template('index.html')
+    return render_template('index.html') """
 
 @app.route('/<string:country>/<string:variety>/<float:aroma>/<float:aftertaste>/<float:acidity>/<float:body>/<float:balance>/<float:moisture>')
 def result(country, variety, aroma, aftertaste, acidity, body, balance, moisture):
